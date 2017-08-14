@@ -1,0 +1,10 @@
+<config>
+  <db>
+    <list id="create_table_sql">
+      <item value="create_program_table.sql" />
+      <item value="create_episode_table.sql" />
+      <item value="create_task_table.sql" />
+    </list>
+  </db>
+  <param id="episode_url_retry" value="1" />
+</config>

@@ -1,0 +1,2 @@
+E:\≤‚ ‘\YambMP4Toolscn\Yamb MP4Tools\yuvdump.exe - mpeg4ip version 1.5.11
+usage: yuvdump -h [height] -w [width] -r [frameRate/(perSecond/100)] fileName

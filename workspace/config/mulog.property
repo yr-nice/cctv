@@ -1,0 +1,19 @@
+# STDOUT appender
+log4j.appender.STDOUT=org.apache.log4j.ConsoleAppender
+log4j.appender.STDOUT.layout=org.apache.log4j.PatternLayout
+log4j.appender.STDOUT.layout.ConversionPattern=[%d{dd.MM HH:mm:ss}] %p: %m\n
+
+
+# Appender "LOGFILE" to output to log file.
+log4j.appender.LOGFILE=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.LOGFILE.File=c:/temp/log4j.log
+log4j.appender.LOGFILE.DatePattern='.'yyyy-MM-dd
+log4j.appender.LOGFILE.layout=org.apache.log4j.PatternLayout
+#log4j.appender.LOGFILE.layout.ConversionPattern=[%d{dd.MM HH:mm:ss.SSS}] [%-5p]
+log4j.appender.LOGFILE.layout.ConversionPattern=[%d] [%-5p] - %m\n
+
+
+log4j.category.mu=DEBUG, STDOUT
+
+log4j.rootLogger=STDOUT
+log4j.debug=false
